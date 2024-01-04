@@ -17,8 +17,8 @@ import leetcode from '../../Assets/Icons/leetcode.png'
 
 export const NavBar = () => {
 
-    const [activeLink, setActiveLink] = useState('home');       // for keeping track of active navbar link
-    const [scrolled, setScrolled] = useState(false);                // for making the navbar transparent on scroll we need to know if the user has scrolled or not
+    const [activeLink, setActiveLink] = useState('home');           // for keeping track of active navbar link
+    const [scrolled, setScrolled] = useState(false);               // for making the navbar transparent on scroll we need to know if the user has scrolled or not
 
     useEffect(() => {
         const onScroll = () => {
@@ -48,7 +48,7 @@ export const NavBar = () => {
                     <span className="navbar-toggler-icon"></span>           {/* This icon is for responsive mobile page */}
                 </Navbar.Toggle> 
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto">               
                         <Nav.Link href="#home" className = {activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick = { () => onUpdateActiveLink('home') } >
                             Home
                         </Nav.Link>

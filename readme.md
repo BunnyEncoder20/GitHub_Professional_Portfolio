@@ -6,6 +6,8 @@ This is a Portfolio website which I have made to display all of Projects I've ma
 ```
 npx i create-react-app professional-portfolio
 npm react-bootstrap bootstrap
+npm i react-bootstrap-icons --save
+npm install react-multi-carousel --save
 ```
 
 ---
@@ -31,3 +33,5 @@ npm react-bootstrap bootstrap
 ```import Nav from 'react-bootstrap/Nav';  // ideally```
 Because it reduces the amount of code for the client (The entire library won't get import for one component). Which happens here : 
 ```import {Nav} from 'react-bootstrap';  // less ideally```
+
+- 
