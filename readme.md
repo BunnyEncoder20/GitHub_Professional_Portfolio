@@ -29,9 +29,20 @@ npm install react-multi-carousel --save
 
 ---
 ## Learnings 
-- It is better to import individual components of Bootstrap like : 
+1. It is better to import individual components of Bootstrap like : 
 ```import Nav from 'react-bootstrap/Nav';  // ideally```
 Because it reduces the amount of code for the client (The entire library won't get import for one component). Which happens here : 
 ```import {Nav} from 'react-bootstrap';  // less ideally```
 
-- 
+2. React-Bootstrap-Icons
+    - is a library of svg icons which are compatible with react compoenents and can be import just like any other react component
+    - ```npm i react-bootstrap-icons```
+3. React Multi Carousel
+    - it is a react npm package with which we can import highly cutomizable carousel displays (used in the skills section of this project)
+    - ```npm install react-multi-carousel --save```
+    - to import the component : 
+```
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+```
+4.

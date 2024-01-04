@@ -10,7 +10,8 @@ import Container from 'react-bootstrap/Container';
 import { ArrowRightCircle } from 'react-bootstrap-icons'
 
 // Importing assets 
-import headerImg from '../../Assets/Images/header-img.svg';
+// import headerImg from '../../Assets/Images/header-img.svg';
+import headerImg from '../../Assets/Images/hue.png';
 
 
 
@@ -67,7 +68,7 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className='tagline'> I'm Varun Verma </span>
+                        <span className='tagline'>{`< I'm Varun Verma />`}</span>
                         <h1>
                             {`Hi I'm a `}
                             <span className='wrap'>{text}</span>

@@ -6,7 +6,6 @@ import './Skills.css'
 // Importing bootstrap components 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
 
 // Importing react-multi-carousel
 import Carousel from 'react-multi-carousel';
@@ -46,27 +45,27 @@ export const Skills = () => {
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis laboriosam delectus sapiente natus, harum ex eaque amet sint et nobis.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={ } alt="Image" />
+                                    {/* <img src={ } alt="Image" /> */}
                                     <h5>Web Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={ } alt="Image" />
+                                    {/* <img src={ } alt="Image" /> */}
                                     <h5>React JS</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={ } alt="Image" />
+                                    {/* <img src={ } alt="Image" /> */}
                                     <h5>JavaScript</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={ } alt="Image" />
+                                    {/* <img src={ } alt="Image" /> */}
                                     <h5>Node JS</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={ } alt="Image" />
+                                    {/* <img src={ } alt="Image" /> */}
                                     <h5>Express JS</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={ } alt="Image" />
+                                    {/* <img src={ } alt="Image" /> */}
                                     <h5>MongoDB</h5>
                                 </div>
                             </Carousel>
