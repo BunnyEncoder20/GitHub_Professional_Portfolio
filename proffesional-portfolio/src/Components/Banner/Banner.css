@@ -1,6 +1,6 @@
 .banner {
     margin-top: 0;
-    padding: 200px 0 100px 0;
+    padding: 150px 0 100px 0;
     background-image: url('../../Assets/Images/banner-bg.png');
     background-position: top center;
     background-size: cover;
@@ -20,7 +20,7 @@
 
 .banner h1 {
     text-align: left;
-    font-size: 65px;
+    font-size: 45px;
     font-weight: 700;
     letter-spacing: 0.8px;
     line-height: 1;

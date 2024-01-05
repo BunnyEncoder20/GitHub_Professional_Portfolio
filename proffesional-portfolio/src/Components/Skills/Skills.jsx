@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
 
-// Importing css styling 
+// Importing css styling & Images 
 import './Skills.css'
+import meter1 from '../../Assets/Images/meter1.svg'
+import meter2 from '../../Assets/Images/meter2.svg'
+import meter3 from '../../Assets/Images/meter3.svg'
+import colorSharp from '../../Assets/Images/color-sharp.png'
 
 // Importing bootstrap components 
 import Row from 'react-bootstrap/Row';
@@ -23,11 +27,11 @@ export const Skills = () => {
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 3
+            items: 4
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 2
+            items: 3
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -42,37 +46,66 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-bx">
                             <h2> Skills </h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis laboriosam delectus sapiente natus, harum ex eaque amet sint et nobis.</p>
+                            <p>As a versatile MERN stack developer, I bring expertise in crafting dynamic web applications. Proficient in modern web technologies, I seamlessly blend front-end finesse with robust back-end solutions. Additionally, my excellent understanding of Python and DSA adds a strategic edge to my Problem Solving toolkit.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
+
                                 <div className="item">
-                                    {/* <img src={ } alt="Image" /> */}
-                                    <h5>Web Development</h5>
-                                </div>
-                                <div className="item">
-                                    {/* <img src={ } alt="Image" /> */}
-                                    <h5>React JS</h5>
-                                </div>
-                                <div className="item">
-                                    {/* <img src={ } alt="Image" /> */}
-                                    <h5>JavaScript</h5>
-                                </div>
-                                <div className="item">
-                                    {/* <img src={ } alt="Image" /> */}
-                                    <h5>Node JS</h5>
-                                </div>
-                                <div className="item">
-                                    {/* <img src={ } alt="Image" /> */}
-                                    <h5>Express JS</h5>
-                                </div>
-                                <div className="item">
-                                    {/* <img src={ } alt="Image" /> */}
+                                    <img src={meter3} alt="90" />
                                     <h5>MongoDB</h5>
                                 </div>
+
+                                <div className="item">
+                                    <img src={meter2} alt="80" />
+                                    <h5>Express JS</h5>
+                                </div>
+
+                                <div className="item">
+                                    <img src={meter1} alt="95" />
+                                    <h5>React JS</h5>
+                                </div>
+
+                                <div className="item">
+                                    <img src={meter3} alt="90" />
+                                    <h5>Node JS</h5>
+                                </div>
+
+                                <div className="item">
+                                    <img src={meter1} alt="95" />
+                                    <h5>JavaScript</h5>
+                                </div>
+
+                                <div className="item">
+                                    <img src={meter2} alt="80" />
+                                    <h5>Bootstrap 5</h5>
+                                </div>
+
+                                <div className="item">
+                                    <img src={meter1} alt="95" />
+                                    <h5>Python</h5>
+                                </div>
+
+                                <div className="item">
+                                    <img src={meter2} alt="80" />
+                                    <h5>TailWindCSS</h5>
+                                </div>
+
+                                <div className="item">
+                                    <img src={meter2} alt="80" />
+                                    <h5>CSS</h5>
+                                </div>
+
+                                <div className="item">
+                                    <img src={meter3} alt="90" />
+                                    <h5>HTML</h5>
+                                </div>
+
                             </Carousel>
                         </div>
                     </Col>
                 </Row>
             </Container>
+
+            <img src={colorSharp} alt="bg left" className="background-image-left" />
         </section>
 
     );

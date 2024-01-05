@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Importing the components : 
 import { NavBar } from './Components/NavBar/NavBar'
 import { Banner } from './Components/Banner/Banner'
-// import { Skill } from './Components/Skills/Skills'
+import { Skills } from './Components/Skills/Skills'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
 
       <NavBar />
       <Banner />
-      {/* <Skills /> */}
+      <Skills />
 
     </div>
   );

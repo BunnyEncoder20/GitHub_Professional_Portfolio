@@ -30,7 +30,14 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+    /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); */
+        /* rgb(95, 183, 249) */
+        text-shadow:
+            0 0 10px rgba(255, 255, 255, 1.0),
+            0 0 15px rgba(255, 255, 255, 0.9),
+            0 0 20px rgba(255, 255, 255, 0.8),
+            0 0 25px rgba(255, 255, 255, 0.7),
+            0 0 30px rgba(255, 255, 255, 0.6);
 }
 
 span.navbar-text {
