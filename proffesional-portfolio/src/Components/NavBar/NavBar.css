@@ -25,6 +25,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
     font-size: 18px;
     opacity: 0.75;
     /* Links will be kinda transparent unless hovered on or active*/
+    transition: text-shadow 0.3s ease-in-out;
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -32,12 +33,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
     /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); */
         /* rgb(95, 183, 249) */
-        text-shadow:
+    text-shadow:
             0 0 10px rgba(255, 255, 255, 1.0),
             0 0 15px rgba(255, 255, 255, 0.9),
             0 0 20px rgba(255, 255, 255, 0.8),
             0 0 25px rgba(255, 255, 255, 0.7),
             0 0 30px rgba(255, 255, 255, 0.6);
+    transition: text-shadow 0.3s ease-in-out;
 }
 
 span.navbar-text {
@@ -56,11 +58,12 @@ span.navbar-text {
     background: rgba(217, 217, 217, 0.1);
     display: inline-flex;
     border-radius: 50%;
-    margin-right: 6px;
+    margin-right: 20px;
     align-items: center;
     justify-content: center;
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 }
 
 .social-icon a::before {
@@ -78,6 +81,10 @@ span.navbar-text {
 .social-icon a:hover::before {
     /* when hovered over icons */
     transform: scale(1);
+    box-shadow:
+            0 0 10px rgba(255, 255, 255, 1.0),
+            0 0 15px rgba(255, 255, 255, 0.7),
+            0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 .social-icon a img {
@@ -102,6 +109,7 @@ span.navbar-text {
     position: relative;
     background-color: transparent;
     transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9)
 }
 
 .navbar-text button span {
