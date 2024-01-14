@@ -10,11 +10,11 @@ import colorSharp from '../../Assets/Images/color-sharp.png'
 // Importing bootstrap components 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 
 // Importing react-multi-carousel
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Container from 'react-bootstrap/esm/Container';
 
 
 export const Skills = () => {
