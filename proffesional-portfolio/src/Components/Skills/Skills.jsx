@@ -16,6 +16,10 @@ import Container from 'react-bootstrap/Container';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
+// Importing react-on-screen and Animate.css for on screen animations
+import TrackVisibility from 'react-on-screen';
+import 'animate.css';
+
 
 export const Skills = () => {
 
@@ -45,8 +49,13 @@ export const Skills = () => {
                 <Row>
                     <Col>
                         <div className="skill-bx">
+                            <TrackVisibility>
+                            {({ isVisible }) =>
+                            <div className={isVisible ? "animate__animated animate__pulse" : ""}>
                             <h2> Skills </h2>
                             <p>As a versatile MERN stack developer, I bring expertise in crafting dynamic web applications. Proficient in modern web technologies, I seamlessly blend front-end finesse with robust back-end solutions. Additionally, my excellent understanding of Python and DSA adds a strategic edge to my Problem Solving toolkit.</p>
+                            </div>}
+                            </TrackVisibility>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
 
                                 <div className="item">
