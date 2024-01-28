@@ -41,7 +41,7 @@ export const Contact = () => {
         setButtonText('Sending...');
 
         let response = await toast.promise(
-            fetch("http://localhost:5000/contact", {
+            fetch("https://proffessional-portfolio-mailer.onrender.com/contact", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json;charset=utf-8',
