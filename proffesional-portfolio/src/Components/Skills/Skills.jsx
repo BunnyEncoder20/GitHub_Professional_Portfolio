@@ -5,7 +5,7 @@ import './Skills.css'
 import meter1 from '../../Assets/Images/meter1.svg'
 import meter2 from '../../Assets/Images/meter2.svg'
 import meter3 from '../../Assets/Images/meter3.svg'
-import colorSharp from '../../Assets/Images/color-sharp.png'
+import bannerBg from '../../Assets/Images/banner-bg.png'
 
 // Importing bootstrap components 
 import Row from 'react-bootstrap/Row';
@@ -105,7 +105,7 @@ export const Skills = () => {
                 </Row>
             </Container>
 
-            <img src={colorSharp} alt="bg left" className="background-image-left" />
+            <img src={bannerBg} alt="bg left" className="background-image-left" />
         </section>
 
     );

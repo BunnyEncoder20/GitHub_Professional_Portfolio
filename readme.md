@@ -41,8 +41,54 @@ Because it reduces the amount of code for the client (The entire library won't g
     - it is a react npm package with which we can import highly cutomizable carousel displays (used in the skills section of this project)
     - ```npm install react-multi-carousel --save```
     - to import the component : 
-```
+```javascript
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 ```
-4.
+4. NodeMailer 
+    - it is a react npm package with which we can send emails use our email application passwords 
+    - Used react-toastify to handle the messages for the promise.
+
+5. React-toastify
+    - this is my fav thing in react for now 
+    - Used promise toasts to handle the email sending update messages from the promise
+   - Installation : ```npm install react-toastify```
+   - Importing the package : 
+```javascript
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+```
+6. Animate.css Package
+    - Documentation site : [Animate.css](https://animate.style/)
+    - used to add animations to the components entrances and exits  
+    - installation : ```npm install animate.css --save```
+    - Importing & basic usage : 
+```javescript
+import 'animate.css';
+
+<h1 class="animate__animated animate__bounce">An animated element</h1>
+```
+
+7. React on Screen 
+    - package to detect when react component is on screen / visible 
+    - Installation : ```npm i react-on-screen``` 
+    - Basic usage: 
+```javascript
+import TrackVisibility from 'react-on-screen';
+const ComponentToTrack = ({ isVisible }) => {
+    const style = {
+        background: isVisible ? 'red' : 'blue'
+    };
+    return <div style={style}>Hello</div>;
+}
+
+const YourApp = () => {
+    return (
+       {/* Some Stuff */}
+        <TrackVisibility>
+            <ComponentToTrack />
+        </TrackVisibility>
+       {/* Some Stuff */}
+    );
+}
+```

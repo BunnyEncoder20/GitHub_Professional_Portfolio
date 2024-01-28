@@ -13,7 +13,9 @@ import { ArrowRightCircle } from 'react-bootstrap-icons'
 // import headerImg from '../../Assets/Images/header-img.svg';
 import headerImg from '../../Assets/Images/hue.png';
 
-
+// Importing react-on-screen and Animate.css for on screen animations
+import TrackVisibility from 'react-on-screen';
+import 'animate.css';
 
 export const Banner = () => {
 
@@ -68,13 +70,20 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className='tagline'>{`< I'm Varun Verma />`}</span>
-                        <h1>
-                            {`Hi I'm a `}
-                            <span className='wrap'>{text}</span>
-                        </h1>
-                        <p>Dedicated MERN Stack Developer known for delivering high-quality results within tight deadlines. Recognized for logical thinking, meticulous organization, and a results-driven approach in fast-paced environments. A collaborative team player with a passion for staying updated on emerging technologies, I possess a quick learning ability to adapt seamlessly to new challenges. Specializing in crafting customer-focused websites, my commitment to maintaining high standards is evident in solution-oriented problem-solving and proactive collaboration within teams.</p>
+                        <TrackVisibility>
+                            {({ isVisible }) =>
+                                <div className={isVisible ? "animate__animated animate__pulse" : ""}>
+                                    <span className='tagline'>{`< I'm Varun Verma />`}</span>
+                                    <h1>
+                                        {`Hi I'm a `}
+                                        <span className='wrap'>{text}</span>
+                                    </h1>
+                                </div>}
+                        </TrackVisibility>
+                        <p className='align-center'>Dedicated MERN Stack Developer known for delivering high-quality results within tight deadlines. Recognized for logical thinking, meticulous organization, and a results-driven approach in fast-paced environments. A collaborative team player with a passion for staying updated on emerging technologies, I possess a quick learning ability to adapt seamlessly to new challenges. Specializing in crafting customer-focused websites, my commitment to maintaining high standards is evident in solution-oriented problem-solving and proactive collaboration within teams.</p>
                         <button onClick={() => console.log('Connected Clicked')}> Let's Connect <ArrowRightCircle size={25} /> </button>
+
+
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" />

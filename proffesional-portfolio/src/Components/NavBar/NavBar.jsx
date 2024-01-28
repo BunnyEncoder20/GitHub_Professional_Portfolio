@@ -55,7 +55,7 @@ export const NavBar = () => {
                         <Nav.Link href="#skills" className = {activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick = { () => onUpdateActiveLink('skills') }>
                             Skills
                         </Nav.Link>
-                        <Nav.Link href="#Projects" className = {activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick = { () => onUpdateActiveLink('projects') }>
+                        <Nav.Link href="#project" className = {activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick = { () => onUpdateActiveLink('projects') }>
                             Projects
                         </Nav.Link>
                     </Nav>
@@ -67,9 +67,9 @@ export const NavBar = () => {
                             <a href="https://github.com/BunnyEncoder20"><img src={github} alt="GitHub" /></a>
                             <a href="https://leetcode.com/BunnyEncoder/"><img src={leetcode} alt="LeetCode" /></a>
                         </div>
-                        <button className="vvd" onClick={ () => console.log("Let's Connect Clicked !")}>
-                            <span> Let's Connect !</span>
-                        </button>
+                        
+                        
+                        <button className="vvd"> <span> Let's Connect !</span> </button>
                     </span>
                 </Navbar.Collapse>
             </Container>

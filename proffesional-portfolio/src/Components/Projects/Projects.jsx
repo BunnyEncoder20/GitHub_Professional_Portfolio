@@ -16,7 +16,9 @@ import Col from 'react-bootstrap/Col';
 import Tab from 'react-bootstrap/Tab';
 import Container from 'react-bootstrap/Container';
 
-
+// Importing react-on-screen and Animate.css for on screen animations
+import TrackVisibility from 'react-on-screen';
+import 'animate.css';
 
 export const Projects = () => {
 
@@ -52,7 +54,7 @@ export const Projects = () => {
             description: "A simple Weather Displaying Website which fetches data from OpenWeatherAPI. It's a responsive website which shows the current local weather and the forecasted weather for the next 7 days.",
             image: WeatherHub
         },
-        
+
     ]
 
     return (
@@ -60,8 +62,13 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h2>Projects</h2>
-                        <p>In the realm of my digital endeavors, my projects are not just conceptualized, they are meticulously crafted from inception to execution. As a passionate MERN stack developer, I transcend the role of a mere planner and proudly embrace that of an executioner. Welcome to a showcase where ideas come to life, and plans transform into seamless, functional realities.</p>
+                        <TrackVisibility>
+                            {({ isVisible }) =>
+                                <div className={isVisible ? "animate__animated animate__pulse" : ""}>
+                                    <h2>Projects</h2>
+                                    <p>In the realm of my digital endeavors, my projects are not just conceptualized, they are meticulously crafted from inception to execution. As a passionate MERN stack developer, I transcend the role of a mere planner and proudly embrace that of an executioner. Welcome to a showcase where ideas come to life, and plans transform into seamless, functional realities.</p>
+                                </div>}
+                        </TrackVisibility>
 
                         {/* Navigation Tabs */}
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -82,9 +89,9 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="first">
                                     <Row>
                                         {
-                                            projects.map((project,index)=>{
-                                                return(
-                                                    <ProjectCard key={index} {...project}/>
+                                            projects.map((project, index) => {
+                                                return (
+                                                    <ProjectCard key={index} {...project} />
                                                 )
                                             })
                                         }

@@ -90,7 +90,7 @@ span.navbar-text {
 .social-icon a img {
     width: 55%;
     z-index: 1;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .social-icon a:hover img {
@@ -100,12 +100,13 @@ span.navbar-text {
 
 .navbar-text button {
     /* the let's connect button */
+    width: 25vw;
     font-weight: 700;
     color: #fff;
     border: 1px solid #fff;
     padding: 18px 34px;
     font-size: 18px;
-    margin-left: 18px;
+    margin-left: -40px;
     position: relative;
     background-color: transparent;
     transition: 0.3s ease-in-out;
