@@ -9,25 +9,8 @@ npm react-bootstrap bootstrap
 npm i react-bootstrap-icons --save
 npm install react-multi-carousel --save
 ```
+--- 
 
----
-## Design of Website
-1. Home Section
-![Home Page of Portfolio](/proffesional-portfolio/src/Assets/Website%20Design/HomePage%20of%20PPW.png)
-
-2. Skills Section 
-![Skills Section ](/proffesional-portfolio/src/Assets/Website%20Design/skills%20section.png)
-
-3. Project Section 
-![Project Section](/proffesional-portfolio/src/Assets/Website%20Design/projects%20section.png)
-
-4. News Letter Section
-![Email Section](/proffesional-portfolio//src/Assets/Website%20Design/email%20section.png)
-
-5. Let's Connection
-![Email Section](/proffesional-portfolio//src/Assets/Website%20Design/get%20in%20touch.png)
-
----
 ## Learnings 
 1. It is better to import individual components of Bootstrap like : 
 ```import Nav from 'react-bootstrap/Nav';  // ideally```
