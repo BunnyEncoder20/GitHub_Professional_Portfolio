@@ -6,8 +6,14 @@ import { ProjectCard } from './ProjectCard/ProjectCard';
 // Importing css and Assets
 import './Projects.css'
 import colorSharp2 from '../../Assets/Images/color-sharp2.png'
+
+//Importing project Images
 import WeatherHub from "../../Assets/Project Images/WeatherHub.png"
 import PasswordGenerator from "../../Assets/Project Images/PasswordGenerator.png"
+import Musicart from "../../Assets/Project Images/Musicart Image.png"
+import Quizzie from "../../Assets/Project Images/Quizzie.png"
+import personalPortfolio from "../../Assets/Project Images/professionalPortfolio.png"
+import CancerWebsite from "../../Assets/Project Images/SkinCancer Website.png"
 
 // Importing Bootstrap
 import Nav from 'react-bootstrap/Nav';
@@ -26,7 +32,7 @@ export const Projects = () => {
     const projects = [
         {
             title: "WeatherHub",
-            description: "A simple Weather Displaying Website which fetches data from OpenWeatherAPI. It's a responsive website which shows the current local weather and the forecasted weather for the next 7 days.",
+            description: "A simple Weather Website which fetches data from API. Responsive website that shows the current local weather and the forecasted weather for the next 7 days.",
             image: WeatherHub
         },
         {
@@ -35,24 +41,24 @@ export const Projects = () => {
             image: PasswordGenerator
         },
         {
-            title: "WeatherHub",
-            description: "A simple Weather Displaying Website which fetches data from OpenWeatherAPI. It's a responsive website which shows the current local weather and the forecasted weather for the next 7 days.",
-            image: WeatherHub
+            title: "Quizzie",
+            description: "A complete MERN stack Quiz creating and analyzing web app. Users can create and share their Quizzes",
+            image: Quizzie
         },
         {
-            title: "WeatherHub",
-            description: "A simple Weather Displaying Website which fetches data from OpenWeatherAPI. It's a responsive website which shows the current local weather and the forecasted weather for the next 7 days.",
-            image: WeatherHub
+            title: "Musicart",
+            description: "A complete MERN stack E-comm web app for music electronic products. Features searching, sorting, filtering, and many more",
+            image: Musicart
         },
         {
-            title: "WeatherHub",
-            description: "A simple Weather Displaying Website which fetches data from OpenWeatherAPI. It's a responsive website which shows the current local weather and the forecasted weather for the next 7 days.",
-            image: WeatherHub
+            title: "My Portfolio",
+            description: "A React based Personal Portfolio website, which was made to showcase my skills and projects.",
+            image: personalPortfolio
         },
         {
-            title: "WeatherHub",
-            description: "A simple Weather Displaying Website which fetches data from OpenWeatherAPI. It's a responsive website which shows the current local weather and the forecasted weather for the next 7 days.",
-            image: WeatherHub
+            title: "SkinDetect",
+            description: "A website made using html, css, JS and Python which uses a CNN+ResNET model we trained to classify skin legions as malignant (cancerous) or benign (not cancerous)",
+            image: CancerWebsite
         },
 
     ]
@@ -97,8 +103,28 @@ export const Projects = () => {
                                         }
                                     </Row>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="second">Hellow projects</Tab.Pane>
-                                <Tab.Pane eventKey="third">Hellow projects</Tab.Pane>
+                                <Tab.Pane eventKey="second">
+                                    <Row>
+                                        {
+                                            projects.map((project, index) => {
+                                                return (
+                                                    <ProjectCard key={index} {...project} />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="third">
+                                    <Row>
+                                        {
+                                            projects.map((project, index) => {
+                                                return (
+                                                    <ProjectCard key={index} {...project} />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
                     </Col>
@@ -106,7 +132,7 @@ export const Projects = () => {
             </Container>
 
             {/* Background Gradient */}
-            <img className="background-image-right" src={colorSharp2} />
+            <img className="background-image-right" src={colorSharp2} alt='' />
         </section>
     )
 }
