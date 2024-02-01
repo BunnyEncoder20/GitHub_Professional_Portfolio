@@ -32,7 +32,7 @@ export const Banner = () => {
     // random small time for time period between typing each character
     const [delta, setDelta] = useState(200 - Math.random() * 100);
     // how much time between typing out next word 
-    const period = 1000;
+    const period = 2000;
 
     useEffect(() => {
         let ticker = setInterval(() => {
