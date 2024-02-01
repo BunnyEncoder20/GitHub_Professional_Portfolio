@@ -26,7 +26,7 @@ export const Banner = () => {
     // if the word is being typed or removed tracked by : 
     const [isDeleting, setIsDeleting] = useState(false);
     // Words which need to be typed : 
-    const toRotate = ["Web Developer", "MERN Stack Dev", "BackEnd Dev", "Python Programmer","Batman"];
+    const toRotate = ["a Web Developer", "a MERN Stack Dev", "a BackEnd Engineer", "a Python Programmer","Vengeance","the Knight","BATMAN"];
     // which text are we showing rn 
     const [text, setText] = useState('');
     // random small time for time period between typing each character
@@ -73,9 +73,9 @@ export const Banner = () => {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__pulse" : ""}>
-                                    <span className='tagline'>{`< I'm Varun Verma />`}</span>
+                                    <span className='tagline'>{`< Hi, I'm Varun Verma />`}</span>
                                     <h1>
-                                        {`Hi I'm a `}
+                                        {`I'm `}
                                         <span className='wrap'>{text}</span>
                                     </h1>
                                 </div>}
