@@ -7,6 +7,13 @@ nav.navbar {
     transition: 0.32s ease-in-out;
 }
 
+.logo{
+    filter: drop-shadow(0 0 10px #ff0000)
+            drop-shadow(0 0 20px #ff0000)
+            drop-shadow(0 0 30px #ff0000)
+            drop-shadow(0 0 40px #ff0000);
+}
+
 nav.navbar.scrolled {
     padding: 0px 0;
     background-color: #121212;
@@ -32,13 +39,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
     /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); */
-        /* rgb(95, 183, 249) */
+    /* rgb(95, 183, 249) */
     text-shadow:
-            0 0 10px rgba(255, 255, 255, 1.0),
-            0 0 15px rgba(255, 255, 255, 0.9),
-            0 0 20px rgba(255, 255, 255, 0.8),
-            0 0 25px rgba(255, 255, 255, 0.7),
-            0 0 30px rgba(255, 255, 255, 0.6);
+        0 0 10px rgba(255, 255, 255, 1.0),
+        0 0 15px rgba(255, 255, 255, 0.9),
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 25px rgba(255, 255, 255, 0.7),
+        0 0 30px rgba(255, 255, 255, 0.6);
     transition: text-shadow 0.3s ease-in-out;
 }
 
@@ -82,9 +89,9 @@ span.navbar-text {
     /* when hovered over icons */
     transform: scale(1);
     box-shadow:
-            0 0 10px rgba(255, 255, 255, 1.0),
-            0 0 15px rgba(255, 255, 255, 0.7),
-            0 0 20px rgba(255, 255, 255, 0.5);
+        0 0 10px rgba(255, 255, 255, 1.0),
+        0 0 15px rgba(255, 255, 255, 0.7),
+        0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 .social-icon a img {
@@ -178,7 +185,8 @@ nav.navbar .navbar-toggler-icon:after {
 }
 
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-    transform: rotate(45deg);           /*when collapsed, rotate*/
+    transform: rotate(45deg);
+    /*when collapsed, rotate*/
     background-color: #fff;
     height: 2px;
 }

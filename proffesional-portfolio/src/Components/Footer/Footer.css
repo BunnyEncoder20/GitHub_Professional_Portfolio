@@ -12,8 +12,14 @@
 
 .footer img {
     width: 26%;
-    align-self: center;
-    
+    align-self: center;   
+}
+
+.logo{
+    filter: drop-shadow(0 0 10px #ff0000)
+            drop-shadow(0 0 20px #ff0000)
+            drop-shadow(0 0 30px #ff0000)
+            drop-shadow(0 0 40px #ff0000);
 }
 
 .rowContainer{

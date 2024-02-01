@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import './Footer.css'
 
 // Importing the icons 
-import logo from '../../Assets/Icons/logo.svg';
+import logo from '../../Assets/Images/logo5-removebg.png';
 import linkedIn from '../../Assets/Icons/linkedIn.svg'
 import github from '../../Assets/Icons/github.png'
 import leetcode from '../../Assets/Icons/leetcode.png'
@@ -17,7 +17,7 @@ export const Footer = () => {
             <Container>
                 <Row className="align-item-center rowContainer">
                     <Col sm={6}>
-                        <img src={logo} alt='' />
+                        <img src={logo} alt='' className='logo' />
                     </Col>
                     <Col sm={6} className="text-center">
                         <div className="social-icon">

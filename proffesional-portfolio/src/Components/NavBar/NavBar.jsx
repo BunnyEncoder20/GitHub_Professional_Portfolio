@@ -9,7 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import './NavBar.css'
 
 // Import Icons 
-import logo from '../../Assets/Images/logo4.jpg' ; 
+import logo from '../../Assets/Images/logo5-removebg.png' ; 
 import linkedIn from '../../Assets/Icons/linkedIn.svg'
 import github from '../../Assets/Icons/github.png'
 import leetcode from '../../Assets/Icons/leetcode.png'
@@ -42,7 +42,7 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled  ? "scrolled" : ""} >
             <Container>
                 <Navbar.Brand href="#home">
-                    <img src={logo} alt="Logo" />
+                    <img src={logo} alt="Logo" className='logo'/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" >
                     <span className="navbar-toggler-icon"></span>           {/* This icon is for responsive mobile page */}
