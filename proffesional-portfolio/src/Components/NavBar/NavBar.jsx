@@ -9,7 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import './NavBar.css'
 
 // Import Icons 
-import logo from '../../Assets/Icons/logo.svg' ; 
+import logo from '../../Assets/Images/logo4.jpg' ; 
 import linkedIn from '../../Assets/Icons/linkedIn.svg'
 import github from '../../Assets/Icons/github.png'
 import leetcode from '../../Assets/Icons/leetcode.png'

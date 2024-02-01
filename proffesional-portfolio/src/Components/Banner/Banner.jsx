@@ -26,13 +26,13 @@ export const Banner = () => {
     // if the word is being typed or removed tracked by : 
     const [isDeleting, setIsDeleting] = useState(false);
     // Words which need to be typed : 
-    const toRotate = ["Web Developer", "MERN Stack Dev", "BackEnd Dev", "Python Programmer"];
+    const toRotate = ["Web Developer", "MERN Stack Dev", "BackEnd Dev", "Python Programmer","Batman"];
     // which text are we showing rn 
     const [text, setText] = useState('');
     // random small time for time period between typing each character
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const [delta, setDelta] = useState(200 - Math.random() * 100);
     // how much time between typing out next word 
-    const period = 2000;
+    const period = 1000;
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -42,7 +42,7 @@ export const Banner = () => {
         return () => { clearInterval(ticker) };
     }, [text])
 
-    // Tick fucntion 
+    // Tick function 
     const tick = () => {
         let i = loopNum % toRotate.length;
         let fullText = toRotate[i];
@@ -61,7 +61,7 @@ export const Banner = () => {
         else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(200 - Math.random() * 100);
         }
     }
 
